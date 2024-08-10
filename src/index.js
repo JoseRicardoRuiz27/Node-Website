@@ -10,5 +10,8 @@ app.set('cliente', join(__dirname, 'cliente'))
 
 app.use(router)
 
-app.listen(3001)
-console.log('Hola express')
+const PORT = process.env.PORT ?? 3001
+
+app.listen(PORT, () => {
+    console.log(`El prutos es http://localhost:${PORT}`)
+})
