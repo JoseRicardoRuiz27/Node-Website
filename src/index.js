@@ -15,5 +15,5 @@ app.use(express.static(join(__dirname, 'public')))
 const PORT = process.env.PORT ?? 3001
 
 app.listen(PORT, () => {
-    console.log(`El prutos es http://localhost:${PORT}`)
+    console.log(`El puerto es http://localhost:${PORT}`)
 })
