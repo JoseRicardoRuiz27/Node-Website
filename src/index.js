@@ -10,6 +10,8 @@ app.set('cliente', join(__dirname, 'cliente'))
 
 app.use(router)
 
+app.use(express.static(join(__dirname, 'public')))
+
 const PORT = process.env.PORT ?? 3001
 
 app.listen(PORT, () => {
