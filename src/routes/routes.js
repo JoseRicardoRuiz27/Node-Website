@@ -3,7 +3,7 @@ import {Router} from 'express';
 const router = Router()
 
 router.get(`/`, (req, res) => {
-    res.sendFile(process.cwd() + '/src/cliente/index.html')
+    res.sendFile(process.cwd() + '/index.html')
 })
 
 router.get('/about', (req, res) => {
